@@ -28,7 +28,10 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install flask ~= 1.1
+        run: pip install grpcio-tools ~= 1.30
+        run: pip install Jinja2 ~= 2.11
+        run: pip install pytest ~= 5.4
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
