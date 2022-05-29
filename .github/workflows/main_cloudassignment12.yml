@@ -29,8 +29,11 @@ jobs:
       
       - name: Install dependencies
         run: pip install flask ~= 1.1
+    - name: Install dependencies
         run: pip install grpcio-tools ~= 1.30
+              - name: Install dependencies
         run: pip install Jinja2 ~= 2.11
+              - name: Install dependencies
         run: pip install pytest ~= 5.4
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
